@@ -12,6 +12,7 @@
     * Interests (pre-populated from edge analysis)
     * User-defined "like-hat" problems (customizable)
     * Ability to inject **new trend or source material** for greater diversity.
+  * Check https://github.com/cyu60/mentor-matching for the right flow
 
 ---
 
