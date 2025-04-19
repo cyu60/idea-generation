@@ -1476,7 +1476,7 @@
             };
 
             const edgeResponse = await fetch(
-              "https://magicloops.dev/api/loop/66a39aa2-5117-44a0-8ea3-7341019153f2/run",
+              "https://magicloops.dev/api/loop/8da68a4a-313f-47c4-a955-b7c4d7c946ec/run",
               {
                 method: "POST",
                 headers: {
@@ -1880,10 +1880,9 @@
           // Get strengths from edge analysis
           const strengths = userData.edgeAnalysisResult?.strengths || [];
           console.log("Loading strengths:", strengths);
-          const strengthsHtml =
-            strengths
-              .map(
-                (strength) => `
+          const strengthsHtml = strengths
+            .map(
+              (strength) => `
             <div class="form-check">
                   <input class="form-check-input strength-checkbox" type="checkbox" value="${strength}" 
                     id="strength-${strength.replace(/\s+/g, "-")}"
@@ -1902,9 +1901,8 @@
               </label>
                 </div>
               `
-              )
-              .join("") ||
-            '<p class="text-muted">No strengths added yet. Add your first strength above!</p>';
+            )
+            .join("");
           $("#strengths-checkboxes").html(strengthsHtml);
 
           // Populate observed problems
