@@ -2002,6 +2002,7 @@
                   strengths: selectedStrengths.join(", "),
                   observedProblems: selectedProblems,
                   projectGoal: projectGoal,
+                  username: $("#name").val() || "Anonymous User", // Added username
                 }),
               }
             );
@@ -2817,6 +2818,7 @@
                   projectTitle: prd.title,
                   projectIdea: prd.description,
                   interests: userData.personalInfo.interests.join(", "),
+                  username: $("#name").val() || "Anonymous User", // Added username
                 }),
               }
             );
